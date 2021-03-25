@@ -42,12 +42,18 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 User Wins: 
+
+
 ![](https://i.imgur.com/owauSp4.gif)
 ![](https://i.imgur.com/CjtzE45.gif)
 ![](https://i.imgur.com/h9qMWsF.gif)
 ![](https://i.imgur.com/WqPozsU.gif)
 
+
+
 User Loses: 
+
+
 ![](https://i.imgur.com/G8x2ZEi.gif)
 ![](https://i.imgur.com/NQnJ5qL.gif)
 
