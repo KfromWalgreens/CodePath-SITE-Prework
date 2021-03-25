@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome, welcome, dear user, to THE GAME! Repeat back the pattern by pressing the buttons. :D
+    </p>
+    
+    
+    <p id="mistakes"></p>
+    
+    
+    <button id="startBtn" onclick="startGame(); getMistakes()">Start</button>
+    
+    <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
+      
+    <div id="gameButtonArea">
+      <button id="b1" onclick="guess(1)"  onmousedown="startTone(1); showBug(1)" onmouseup="stopTone(); hideBug(1)"><img src= "https://cdn.glitch.com/2a4ad78f-59b5-40ce-8e4a-95d2c0640c0f%2Fbug%20key.png?v=1616605953235" class="hidden" id="bug1"></button>     
+      <button id="b2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="b3" onclick="guess(3)" onmousedown="startTone(3); showBug(2)" onmouseup="stopTone(); hideBug(2)"><img src= "https://cdn.glitch.com/2a4ad78f-59b5-40ce-8e4a-95d2c0640c0f%2Fbug2.png?v=1616608488573" class="hidden" id="bug2"></button>
+      <button id="b4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="b5" onclick="guess(5)" onmousedown="startTone(5); showBug(3)" onmouseup="stopTone(); hideBug(3)"><img src= "https://cdn.glitch.com/2a4ad78f-59b5-40ce-8e4a-95d2c0640c0f%2Fbug4.png?v=1616608484761" class="hidden" id="bug3"></button>
+      <button id="b6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <button id="b7" onclick="guess(7)" onmousedown="startTone(7); showBug(4)" onmouseup="stopTone(); hideBug(4)"><img src= "https://cdn.glitch.com/2a4ad78f-59b5-40ce-8e4a-95d2c0640c0f%2Fbug3.png?v=1616608484261" class="hidden" id="bug4"></button>
+      <button id="b8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"></button>
+    </div>
+    
+  </body>
+</html>
